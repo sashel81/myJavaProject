@@ -11,7 +11,6 @@ public class HomeWorkApp {
         System.out.println("Banana");
         System.out.println("Apple");
     }
-
     public static void checkSumSign() {
         int a = 10;
         int b = 20;
@@ -21,6 +20,7 @@ public class HomeWorkApp {
         } else {
             System.out.println("Сумма отрицательная");
         }
+
     }
     public static void printColor() {
         int value;
