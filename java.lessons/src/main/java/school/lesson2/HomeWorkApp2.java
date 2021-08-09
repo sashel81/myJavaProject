@@ -37,7 +37,7 @@ public class HomeWorkApp2 {
 
     public static boolean within10and20(int x1, int x2) {
         int c = x1 + x2;
-        if ((c > 10) && (c <= 20)) {
+        if ((c >= 10) && (c <= 20)) {
             System.out.println("true");
             return true;
         } else {
