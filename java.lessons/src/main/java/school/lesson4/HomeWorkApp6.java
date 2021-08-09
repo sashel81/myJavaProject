@@ -1,6 +1,6 @@
 package school.lesson4;
 
-import jdk.nashorn.internal.ir.CallNode;
+
 
 // 6. Создать класс Payment с внутренним классом, с помощью объектов которого
 //        можно сформировать покупку из нескольких товаров.

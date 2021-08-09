@@ -2,8 +2,7 @@ package school.lesson4;
 
 
 public class Payment {
-    public item item;
-    private static double val = 0;
+     private static double val = 0;
 
 
     static class item {
