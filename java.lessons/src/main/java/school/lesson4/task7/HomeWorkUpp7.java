@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task7;
 // 7. Создать класс Park с внутренним классом, с помощью объектов которого можно
 //    хранить информацию об аттракционах, времени их работы и стоимость
 public class HomeWorkUpp7 {

@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task8;
 
 public interface TriangleAction {
     default double areaCounter(double a, double b, double c) {

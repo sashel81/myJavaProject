@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task7;
 
 public class Park {
    static class atraction {

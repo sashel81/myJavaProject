@@ -1,4 +1,6 @@
-package school.lesson4;
+package school.lesson4.task8;
+
+import school.lesson4.task8.RectangleAction;
 
 public class Rectangle implements RectangleAction {
         String borderCol;

@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task1_5;
 
 
 //      Домашнее задание 4: Галенко Александра

@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task8;
 
 public class Triangle implements TriangleAction {
     String borderCol;

@@ -1,6 +1,4 @@
-package school.lesson4;
-
-import school.lesson3.Employee;
+package school.lesson4.task1_5;
 
 //      Домашнее задание 4: Галенко Александра
 //

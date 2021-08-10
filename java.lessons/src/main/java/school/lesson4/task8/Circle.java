@@ -1,4 +1,4 @@
-package school.lesson4;
+package school.lesson4.task8;
 
 public class Circle implements CircleAction {
     String borderCol;
