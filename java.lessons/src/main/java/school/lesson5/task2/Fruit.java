@@ -2,13 +2,13 @@ package school.lesson5.task2;
 
 public class Fruit {
 
-        float weight;
+    float weight;
 
-        public void setWeigth(float weigth) {
-                this.weight = weigth;
-        }
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
 
-        public float getWeight() {
-                return weight;
-        }
+    public float getWeight() {
+        return weight;
+    }
 }

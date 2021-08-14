@@ -10,9 +10,10 @@ public class Box<T extends Fruit> {
         this.fruitList = new ArrayList<T>();
     }
 
-    public void addFruit(T fruit) {
-        fruitList.add(fruit);
-
+    public void addFruit(T fruit, int n) {
+        for (int i = 0; i <= n; i++) {
+            fruitList.add(fruit);
+        }
     }
 
     public ArrayList<T> getFruitList() {
@@ -27,21 +28,21 @@ public class Box<T extends Fruit> {
         }
     }
 
-    void info() {
-        if (fruitList.isEmpty()) {
-            System.out.println("Коробка пуста");
-        } else {
-            System.out.println("В коробке находятся " + fruitList.get(0).toString() + " в количестве: " + fruitList.size());
-        }
-    }
+//    void info() {
+//        if (fruitList.isEmpty()) {
+//            System.out.println("Коробка пуста");
+//        } else {
+//            System.out.println("В коробке находятся " + fruitList.get(0).toString() + " в количестве: " + fruitList.size());
+//        }
+//    }
 
-    boolean compare(Box<? extends Fruit> box) {
+    public boolean compare(Box<? extends Fruit> box) {
         return this.getWeight() == box.getWeight();
     }
 
-    void moveAt(Box<T> recieverBox) {
+    public void moveAt(Box<T> recieverBox) {
         for (T obj : fruitList) {
-            recieverBox.addFruit(obj);
+            recieverBox.addFruit(obj, fruitList.size());
         }
         fruitList.clear();
     }
