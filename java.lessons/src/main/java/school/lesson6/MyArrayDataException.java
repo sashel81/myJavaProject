@@ -1,8 +1,8 @@
 package school.lesson6;
 
 public class MyArrayDataException extends Exception {
-    public int i;
-    public int j;
+    private int i;
+    private int j;
 
     MyArrayDataException(int i, int j) {
         this.i = i;
@@ -10,4 +10,19 @@ public class MyArrayDataException extends Exception {
 
     }
 
+    public int getJ() {
+        return j;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
+    }
 }

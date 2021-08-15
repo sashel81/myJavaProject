@@ -1,7 +1,6 @@
 package school.lesson6;
 
 
-
 //       1. Напишите метод, на вход которого подаётся двумерный строковый массив
 //        размером 4х4. При подаче массива другого размера необходимо бросить
 //        исключение MyArraySizeException.
@@ -15,7 +14,7 @@ package school.lesson6;
 //        расчета.
 public class HomeWorkApp1 {
 
-    public static void main(String[] args) throws MyArraySizeException, MyArrayDataException {
+    public static void main(String[] args) {
 //        правильний массив
 //        String[][] arr = {{"1", "2", "3", "4"}, {"2", "2", "2", "3"}, {"1", "2", "8", "2"}, {"2", "2", "2", "2"}};
 
@@ -30,19 +29,17 @@ public class HomeWorkApp1 {
         } catch (MyArraySizeException e) {
             System.out.println("Размер массива не соответствует [4]x[4]");
         } catch (MyArrayDataException e) {
-            System.out.println("Ошибка в ячейке: " + e.i + "x" + e.j);
+            System.out.println("Ошибка в ячейке: " + e.getI() + "x" + e.getJ());
         }
     }
 
     public static int method(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int count = 0;
-        if (array.length != 4) {
+
+        if ((array.length != 4) && (array[0].length != 4)) {
             throw new MyArraySizeException();
         }
         for (int i = 0; i < array.length; i++) {
-            if (array[i].length != 4) {
-                throw new MyArraySizeException();
-            }
             for (int j = 0; j < array[i].length; j++) {
                 try {
                     count += Integer.parseInt(array[i][j]);
